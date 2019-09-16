@@ -14,5 +14,21 @@ class EventCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel?
     @IBOutlet weak var hourLabel: UILabel?
     
+    var model: Event? {
+        didSet {
+            setNeedsLayout()
+        }
+    }
     
+    override func layoutIfNeeded() {
+        super.layoutIfNeeded()
+        updateView()
+    }
+    
+    private func updateView() {
+        
+        
+    }
+    
+
 }

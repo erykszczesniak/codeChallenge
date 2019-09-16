@@ -17,6 +17,7 @@
 		DB6360C9232F9B6C00B776C7 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360C8232F9B6C00B776C7 /* Events.swift */; };
 		DB6360CC232F9DC100B776C7 /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB6360CB232F9DC100B776C7 /* EventCell.xib */; };
 		DB6360CE232F9ED400B776C7 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360CD232F9ED400B776C7 /* EventCell.swift */; };
+		DB6360D1232FA00700B776C7 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360D0232FA00700B776C7 /* ImageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		DB6360C8232F9B6C00B776C7 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		DB6360CB232F9DC100B776C7 /* EventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
 		DB6360CD232F9ED400B776C7 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		DB6360D0232FA00700B776C7 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		DB636098232F9A9400B776C7 /* Dazn Code Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				DB6360CF232F9FFC00B776C7 /* Helpers */,
 				DB6360CA232F9C3E00B776C7 /* EventListCells */,
 				DB6360C7232F9B6500B776C7 /* Models */,
 				DB636099232F9A9400B776C7 /* AppDelegate.swift */,
@@ -148,6 +151,14 @@
 				DB6360CD232F9ED400B776C7 /* EventCell.swift */,
 			);
 			path = EventListCells;
+			sourceTree = "<group>";
+		};
+		DB6360CF232F9FFC00B776C7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DB6360D0232FA00700B776C7 /* ImageDownloader.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB6360D1232FA00700B776C7 /* ImageDownloader.swift in Sources */,
 				DB6360CE232F9ED400B776C7 /* EventCell.swift in Sources */,
 				DB6360C9232F9B6C00B776C7 /* Events.swift in Sources */,
 				DB63609C232F9A9400B776C7 /* EventListViewController.swift in Sources */,
