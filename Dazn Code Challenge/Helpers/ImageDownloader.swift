@@ -10,19 +10,22 @@ import UIKit
 
 extension UIImageView {
     
+    private static let queue = DispatchQueue(label: "com.pl.test.dazn.app", qos: .background, attributes: DispatchQueue.Attributes.concurrent, autoreleaseFrequency: DispatchQueue.AutoreleaseFrequency.never, target: nil)
+    
     //kingFisher, alamofire, etc...
     func downloadImage(imageUrl: String) {
         self.image = nil
         guard let url = URL(string: imageUrl) else { return }
         
-        DispatchQueue.main.async {
+        UIImageView.queue.async {
             do {
                 let imageData = try Data(contentsOf: url)
                 guard let image = UIImage(data: imageData) else {
                     return
                 }
-                
-                self.image = image
+                DispatchQueue.main.async {
+                    self.image = image
+                }
             } catch {}
         }
     }

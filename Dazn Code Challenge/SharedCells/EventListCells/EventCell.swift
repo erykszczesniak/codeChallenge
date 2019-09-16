@@ -18,7 +18,7 @@ class EventCell: UICollectionViewCell {
     
     var model: Event? {
         didSet {
-            setNeedsLayout()
+            layoutIfNeeded()
         }
     }
     
@@ -32,13 +32,23 @@ class EventCell: UICollectionViewCell {
         
         imageView?.downloadImage(imageUrl: model.imageURL)
         titleLabel?.text = model.title + "\n" + model.subtitle
-        hourLabel?.text = model.date
+        hourLabel?.text = formatDate(model.date)
     }
     
     private func resetView() {
         imageView?.image = nil
         titleLabel?.text = nil
         hourLabel?.text = nil
+    }
+    
+    private func formatDate(_ dateToFormat: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        guard let date = dateFormatter.date(from: dateToFormat) else { return dateToFormat }
+        
+        dateFormatter.dateFormat = "EEEE, HH:mm"
+        let string = dateFormatter.string(from: date)
+        return string
     }
 }
 

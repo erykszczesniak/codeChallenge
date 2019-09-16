@@ -14,7 +14,9 @@ class EventListViewController: UIViewController {
     
     private var events: Events? {
         didSet {
-            updateLayout()
+            DispatchQueue.main.async {
+                self.updateLayout()
+            }
         }
     }
     
