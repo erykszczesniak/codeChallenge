@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB63609A232F9A9400B776C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB636099232F9A9400B776C7 /* AppDelegate.swift */; };
+		DB63609C232F9A9400B776C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB63609B232F9A9400B776C7 /* ViewController.swift */; };
+		DB63609F232F9A9400B776C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB63609D232F9A9400B776C7 /* Main.storyboard */; };
+		DB6360A1232F9A9500B776C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6360A0232F9A9500B776C7 /* Assets.xcassets */; };
+		DB6360A4232F9A9500B776C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6360A2232F9A9500B776C7 /* LaunchScreen.storyboard */; };
+		DB6360AF232F9A9500B776C7 /* Dazn_Code_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360AE232F9A9500B776C7 /* Dazn_Code_ChallengeTests.swift */; };
+		DB6360BA232F9A9500B776C7 /* Dazn_Code_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360B9232F9A9500B776C7 /* Dazn_Code_ChallengeUITests.swift */; };
+		DB6360C9232F9B6C00B776C7 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360C8232F9B6C00B776C7 /* Events.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB6360AB232F9A9500B776C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB63608E232F9A9400B776C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB636095232F9A9400B776C7;
+			remoteInfo = "Dazn Code Challenge";
+		};
+		DB6360B6232F9A9500B776C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB63608E232F9A9400B776C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB636095232F9A9400B776C7;
+			remoteInfo = "Dazn Code Challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB636096232F9A9400B776C7 /* Dazn Code Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dazn Code Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB636099232F9A9400B776C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB63609B232F9A9400B776C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB63609E232F9A9400B776C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB6360A0232F9A9500B776C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB6360A3232F9A9500B776C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB6360A5232F9A9500B776C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6360AA232F9A9500B776C7 /* Dazn Code ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dazn Code ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6360AE232F9A9500B776C7 /* Dazn_Code_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dazn_Code_ChallengeTests.swift; sourceTree = "<group>"; };
+		DB6360B0232F9A9500B776C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6360B5232F9A9500B776C7 /* Dazn Code ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dazn Code ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6360B9232F9A9500B776C7 /* Dazn_Code_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dazn_Code_ChallengeUITests.swift; sourceTree = "<group>"; };
+		DB6360BB232F9A9500B776C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6360C8232F9B6C00B776C7 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB636093232F9A9400B776C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6360A7232F9A9500B776C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6360B2232F9A9500B776C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB63608D232F9A9400B776C7 = {
+			isa = PBXGroup;
+			children = (
+				DB636098232F9A9400B776C7 /* Dazn Code Challenge */,
+				DB6360AD232F9A9500B776C7 /* Dazn Code ChallengeTests */,
+				DB6360B8232F9A9500B776C7 /* Dazn Code ChallengeUITests */,
+				DB636097232F9A9400B776C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB636097232F9A9400B776C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB636096232F9A9400B776C7 /* Dazn Code Challenge.app */,
+				DB6360AA232F9A9500B776C7 /* Dazn Code ChallengeTests.xctest */,
+				DB6360B5232F9A9500B776C7 /* Dazn Code ChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB636098232F9A9400B776C7 /* Dazn Code Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				DB6360C7232F9B6500B776C7 /* Models */,
+				DB636099232F9A9400B776C7 /* AppDelegate.swift */,
+				DB63609B232F9A9400B776C7 /* ViewController.swift */,
+				DB63609D232F9A9400B776C7 /* Main.storyboard */,
+				DB6360A0232F9A9500B776C7 /* Assets.xcassets */,
+				DB6360A2232F9A9500B776C7 /* LaunchScreen.storyboard */,
+				DB6360A5232F9A9500B776C7 /* Info.plist */,
+			);
+			path = "Dazn Code Challenge";
+			sourceTree = "<group>";
+		};
+		DB6360AD232F9A9500B776C7 /* Dazn Code ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB6360AE232F9A9500B776C7 /* Dazn_Code_ChallengeTests.swift */,
+				DB6360B0232F9A9500B776C7 /* Info.plist */,
+			);
+			path = "Dazn Code ChallengeTests";
+			sourceTree = "<group>";
+		};
+		DB6360B8232F9A9500B776C7 /* Dazn Code ChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB6360B9232F9A9500B776C7 /* Dazn_Code_ChallengeUITests.swift */,
+				DB6360BB232F9A9500B776C7 /* Info.plist */,
+			);
+			path = "Dazn Code ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		DB6360C7232F9B6500B776C7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB6360C8232F9B6C00B776C7 /* Events.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB636095232F9A9400B776C7 /* Dazn Code Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6360BE232F9A9500B776C7 /* Build configuration list for PBXNativeTarget "Dazn Code Challenge" */;
+			buildPhases = (
+				DB636092232F9A9400B776C7 /* Sources */,
+				DB636093232F9A9400B776C7 /* Frameworks */,
+				DB636094232F9A9400B776C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dazn Code Challenge";
+			productName = "Dazn Code Challenge";
+			productReference = DB636096232F9A9400B776C7 /* Dazn Code Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB6360A9232F9A9500B776C7 /* Dazn Code ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6360C1232F9A9500B776C7 /* Build configuration list for PBXNativeTarget "Dazn Code ChallengeTests" */;
+			buildPhases = (
+				DB6360A6232F9A9500B776C7 /* Sources */,
+				DB6360A7232F9A9500B776C7 /* Frameworks */,
+				DB6360A8232F9A9500B776C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB6360AC232F9A9500B776C7 /* PBXTargetDependency */,
+			);
+			name = "Dazn Code ChallengeTests";
+			productName = "Dazn Code ChallengeTests";
+			productReference = DB6360AA232F9A9500B776C7 /* Dazn Code ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB6360B4232F9A9500B776C7 /* Dazn Code ChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6360C4232F9A9500B776C7 /* Build configuration list for PBXNativeTarget "Dazn Code ChallengeUITests" */;
+			buildPhases = (
+				DB6360B1232F9A9500B776C7 /* Sources */,
+				DB6360B2232F9A9500B776C7 /* Frameworks */,
+				DB6360B3232F9A9500B776C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB6360B7232F9A9500B776C7 /* PBXTargetDependency */,
+			);
+			name = "Dazn Code ChallengeUITests";
+			productName = "Dazn Code ChallengeUITests";
+			productReference = DB6360B5232F9A9500B776C7 /* Dazn Code ChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB63608E232F9A9400B776C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = dazn;
+				TargetAttributes = {
+					DB636095232F9A9400B776C7 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					DB6360A9232F9A9500B776C7 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = DB636095232F9A9400B776C7;
+					};
+					DB6360B4232F9A9500B776C7 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = DB636095232F9A9400B776C7;
+					};
+				};
+			};
+			buildConfigurationList = DB636091232F9A9400B776C7 /* Build configuration list for PBXProject "Dazn Code Challenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB63608D232F9A9400B776C7;
+			productRefGroup = DB636097232F9A9400B776C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB636095232F9A9400B776C7 /* Dazn Code Challenge */,
+				DB6360A9232F9A9500B776C7 /* Dazn Code ChallengeTests */,
+				DB6360B4232F9A9500B776C7 /* Dazn Code ChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB636094232F9A9400B776C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6360A4232F9A9500B776C7 /* LaunchScreen.storyboard in Resources */,
+				DB6360A1232F9A9500B776C7 /* Assets.xcassets in Resources */,
+				DB63609F232F9A9400B776C7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6360A8232F9A9500B776C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6360B3232F9A9500B776C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB636092232F9A9400B776C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6360C9232F9B6C00B776C7 /* Events.swift in Sources */,
+				DB63609C232F9A9400B776C7 /* ViewController.swift in Sources */,
+				DB63609A232F9A9400B776C7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6360A6232F9A9500B776C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6360AF232F9A9500B776C7 /* Dazn_Code_ChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6360B1232F9A9500B776C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6360BA232F9A9500B776C7 /* Dazn_Code_ChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB6360AC232F9A9500B776C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB636095232F9A9400B776C7 /* Dazn Code Challenge */;
+			targetProxy = DB6360AB232F9A9500B776C7 /* PBXContainerItemProxy */;
+		};
+		DB6360B7232F9A9500B776C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB636095232F9A9400B776C7 /* Dazn Code Challenge */;
+			targetProxy = DB6360B6232F9A9500B776C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB63609D232F9A9400B776C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB63609E232F9A9400B776C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB6360A2232F9A9500B776C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB6360A3232F9A9500B776C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB6360BC232F9A9500B776C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB6360BD232F9A9500B776C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB6360BF232F9A9500B776C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dazn Code Challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "daznnnn.Dazn-Code-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB6360C0232F9A9500B776C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dazn Code Challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "daznnnn.Dazn-Code-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB6360C2232F9A9500B776C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dazn Code ChallengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "daznnnn.Dazn-Code-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dazn Code Challenge.app/Dazn Code Challenge";
+			};
+			name = Debug;
+		};
+		DB6360C3232F9A9500B776C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dazn Code ChallengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "daznnnn.Dazn-Code-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dazn Code Challenge.app/Dazn Code Challenge";
+			};
+			name = Release;
+		};
+		DB6360C5232F9A9500B776C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dazn Code ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "daznnnn.Dazn-Code-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Dazn Code Challenge";
+			};
+			name = Debug;
+		};
+		DB6360C6232F9A9500B776C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dazn Code ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "daznnnn.Dazn-Code-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Dazn Code Challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB636091232F9A9400B776C7 /* Build configuration list for PBXProject "Dazn Code Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6360BC232F9A9500B776C7 /* Debug */,
+				DB6360BD232F9A9500B776C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6360BE232F9A9500B776C7 /* Build configuration list for PBXNativeTarget "Dazn Code Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6360BF232F9A9500B776C7 /* Debug */,
+				DB6360C0232F9A9500B776C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6360C1232F9A9500B776C7 /* Build configuration list for PBXNativeTarget "Dazn Code ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6360C2232F9A9500B776C7 /* Debug */,
+				DB6360C3232F9A9500B776C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6360C4232F9A9500B776C7 /* Build configuration list for PBXNativeTarget "Dazn Code ChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6360C5232F9A9500B776C7 /* Debug */,
+				DB6360C6232F9A9500B776C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB63608E232F9A9400B776C7 /* Project object */;
+}
