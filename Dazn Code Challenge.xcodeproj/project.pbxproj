@@ -117,11 +117,12 @@
 		DB636098232F9A9400B776C7 /* Dazn Code Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				DB6360EB232FBCDE00B776C7 /* ViewControllers */,
 				DB6360DD232FAF5700B776C7 /* SharedCells */,
-				DB6360D6232FA81400B776C7 /* SimpleApi */,
 				DB6360CF232F9FFC00B776C7 /* Helpers */,
 				DB6360C7232F9B6500B776C7 /* Models */,
+				DB6360E6232FBA1700B776C7 /* VideoPlayer */,
+				DB6360D8232FAF1800B776C7 /* Schedule */,
+				DB6360D7232FAF0900B776C7 /* EventList */,
 				DB636099232F9A9400B776C7 /* AppDelegate.swift */,
 				DB63609D232F9A9400B776C7 /* Main.storyboard */,
 				DB6360A0232F9A9500B776C7 /* Assets.xcassets */,
@@ -169,6 +170,7 @@
 		DB6360CF232F9FFC00B776C7 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				DB6360D6232FA81400B776C7 /* SimpleApi */,
 				DB6360D0232FA00700B776C7 /* ImageDownloader.swift */,
 				DB6360E2232FB30200B776C7 /* Static.swift */,
 			);
@@ -215,16 +217,6 @@
 				DB6360E9232FBA3400B776C7 /* VideoPlayer.storyboard */,
 			);
 			path = VideoPlayer;
-			sourceTree = "<group>";
-		};
-		DB6360EB232FBCDE00B776C7 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				DB6360E6232FBA1700B776C7 /* VideoPlayer */,
-				DB6360D8232FAF1800B776C7 /* Schedule */,
-				DB6360D7232FAF0900B776C7 /* EventList */,
-			);
-			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
