@@ -123,4 +123,9 @@ extension VideoPlayerViewController {
     @IBAction func seekToRewind(_ sender: Any) {
         seekBy(-10)
     }
+    
+    @IBAction func closeButtonAction(_ sender: Any) {
+        removePlayer()
+        self.dismiss(animated: true, completion: nil)
+    }
 }
