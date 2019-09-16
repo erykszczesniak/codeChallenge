@@ -57,7 +57,9 @@ extension EventListViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        
+        guard let videoPlayerViewController = UIStoryboard(name: "VideoPlayer", bundle: nil).instantiateInitialViewController() as? VideoPlayerViewController else { print("FATAL"); return }
+        self.show(videoPlayerViewController, sender: self)
+        videoPlayerViewController.model = URL(string: events?[indexPath.row].videoURL ?? "")
     }
 }
 

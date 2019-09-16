@@ -28,8 +28,6 @@ class ScheduleViewController: UIViewController {
         }
     }
     
-    weak var emptyInfoLabel: EmptyScheduleView?
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         updateModel()
@@ -40,6 +38,15 @@ class ScheduleViewController: UIViewController {
         super.viewDidDisappear(animated)
         refreshTimer?.invalidate()
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "Schedule"
+        
+    }
+}
+
+extension ScheduleViewController {
     
     private func startRefreshTimer() {
         refreshTimer = Timer(timeInterval: Statics.scheduleRefreshInterval, repeats: true, block: { [weak self] timer in
@@ -57,12 +64,7 @@ class ScheduleViewController: UIViewController {
     }
     
     private func updateLayout() {
-        if events?.count ?? 0 > 0 {
-            emptyInfoLabel?.removeFromSuperview()
-            self.collectionView.reloadData()
-        } else {
-            showEmptyInfoLabel()
-        }
+        self.collectionView.reloadData()
     }
     
     private func updateModel() {
@@ -77,33 +79,11 @@ class ScheduleViewController: UIViewController {
         }
     }
     
-    private func showEmptyInfoLabel() {
-        collectionView.alpha = 0
-        let label = EmptyScheduleView()
-        view.addSubview(label)
-        emptyInfoLabel = label
-        
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        label.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        label.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        label.bottomAnchor.constraint(equalTo: view.topAnchor).isActive = true
-    }
-    
     private func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
         //register cells
         collectionView.register(UINib(nibName: EventCell.nibName, bundle: nil), forCellWithReuseIdentifier: EventCell.nibName)
-    }
-}
-
-//MARK: UICollectionViewDelegate
-extension ScheduleViewController: UICollectionViewDelegate {
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        
     }
 }
 

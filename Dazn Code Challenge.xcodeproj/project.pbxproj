@@ -21,9 +21,9 @@
 		DB6360D3232FA68C00B776C7 /* ApiErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360D2232FA68C00B776C7 /* ApiErrors.swift */; };
 		DB6360D5232FA7A100B776C7 /* SimpleApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360D4232FA7A100B776C7 /* SimpleApi.swift */; };
 		DB6360DA232FAF2600B776C7 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360D9232FAF2600B776C7 /* ScheduleViewController.swift */; };
-		DB6360DC232FAF4100B776C7 /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6360DB232FAF4100B776C7 /* Schedule.storyboard */; };
-		DB6360DF232FB02B00B776C7 /* EmptyScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360DE232FB02B00B776C7 /* EmptyScheduleView.swift */; };
 		DB6360E3232FB30200B776C7 /* Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360E2232FB30200B776C7 /* Static.swift */; };
+		DB6360E8232FBA2000B776C7 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360E7232FBA2000B776C7 /* VideoPlayerViewController.swift */; };
+		DB6360EA232FBA3400B776C7 /* VideoPlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6360E9232FBA3400B776C7 /* VideoPlayer.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,9 +64,9 @@
 		DB6360D2232FA68C00B776C7 /* ApiErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiErrors.swift; sourceTree = "<group>"; };
 		DB6360D4232FA7A100B776C7 /* SimpleApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleApi.swift; sourceTree = "<group>"; };
 		DB6360D9232FAF2600B776C7 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
-		DB6360DB232FAF4100B776C7 /* Schedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
-		DB6360DE232FB02B00B776C7 /* EmptyScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyScheduleView.swift; sourceTree = "<group>"; };
 		DB6360E2232FB30200B776C7 /* Static.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Static.swift; sourceTree = "<group>"; };
+		DB6360E7232FBA2000B776C7 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		DB6360E9232FBA3400B776C7 /* VideoPlayer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VideoPlayer.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +117,8 @@
 		DB636098232F9A9400B776C7 /* Dazn Code Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				DB6360EB232FBCDE00B776C7 /* ViewControllers */,
 				DB6360DD232FAF5700B776C7 /* SharedCells */,
-				DB6360D8232FAF1800B776C7 /* Schedule */,
-				DB6360D7232FAF0900B776C7 /* EventList */,
 				DB6360D6232FA81400B776C7 /* SimpleApi */,
 				DB6360CF232F9FFC00B776C7 /* Helpers */,
 				DB6360C7232F9B6500B776C7 /* Models */,
@@ -197,8 +196,6 @@
 			isa = PBXGroup;
 			children = (
 				DB6360D9232FAF2600B776C7 /* ScheduleViewController.swift */,
-				DB6360DE232FB02B00B776C7 /* EmptyScheduleView.swift */,
-				DB6360DB232FAF4100B776C7 /* Schedule.storyboard */,
 			);
 			path = Schedule;
 			sourceTree = "<group>";
@@ -209,6 +206,25 @@
 				DB6360CA232F9C3E00B776C7 /* EventListCells */,
 			);
 			path = SharedCells;
+			sourceTree = "<group>";
+		};
+		DB6360E6232FBA1700B776C7 /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				DB6360E7232FBA2000B776C7 /* VideoPlayerViewController.swift */,
+				DB6360E9232FBA3400B776C7 /* VideoPlayer.storyboard */,
+			);
+			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
+		DB6360EB232FBCDE00B776C7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB6360E6232FBA1700B776C7 /* VideoPlayer */,
+				DB6360D8232FAF1800B776C7 /* Schedule */,
+				DB6360D7232FAF0900B776C7 /* EventList */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,7 +335,7 @@
 				DB6360A4232F9A9500B776C7 /* LaunchScreen.storyboard in Resources */,
 				DB6360A1232F9A9500B776C7 /* Assets.xcassets in Resources */,
 				DB63609F232F9A9400B776C7 /* Main.storyboard in Resources */,
-				DB6360DC232FAF4100B776C7 /* Schedule.storyboard in Resources */,
+				DB6360EA232FBA3400B776C7 /* VideoPlayer.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,13 +361,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB6360D1232FA00700B776C7 /* ImageDownloader.swift in Sources */,
-				DB6360DF232FB02B00B776C7 /* EmptyScheduleView.swift in Sources */,
 				DB6360CE232F9ED400B776C7 /* EventCell.swift in Sources */,
 				DB6360C9232F9B6C00B776C7 /* Events.swift in Sources */,
 				DB6360DA232FAF2600B776C7 /* ScheduleViewController.swift in Sources */,
 				DB6360D5232FA7A100B776C7 /* SimpleApi.swift in Sources */,
 				DB63609C232F9A9400B776C7 /* EventListViewController.swift in Sources */,
 				DB63609A232F9A9400B776C7 /* AppDelegate.swift in Sources */,
+				DB6360E8232FBA2000B776C7 /* VideoPlayerViewController.swift in Sources */,
 				DB6360D3232FA68C00B776C7 /* ApiErrors.swift in Sources */,
 				DB6360E3232FB30200B776C7 /* Static.swift in Sources */,
 			);

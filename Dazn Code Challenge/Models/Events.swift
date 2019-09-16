@@ -12,7 +12,7 @@ import Foundation
 struct Event: Codable {
     let id, title, subtitle, date: String
     let imageURL: String
-    let videoURL: String
+    let videoURL: String?
     
     enum CodingKeys: String, CodingKey {
         case id, title, subtitle, date

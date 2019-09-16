@@ -32,7 +32,7 @@ class EventCell: UICollectionViewCell {
         
         imageView?.downloadImage(imageUrl: model.imageURL)
         titleLabel?.text = model.title + "\n" + model.subtitle
-        hourLabel?.text = formatDate(model.date)
+        hourLabel?.text = model.date
     }
     
     private func resetView() {
