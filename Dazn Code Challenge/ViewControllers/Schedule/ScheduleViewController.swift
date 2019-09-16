@@ -38,12 +38,6 @@ class ScheduleViewController: UIViewController {
         super.viewDidDisappear(animated)
         refreshTimer?.invalidate()
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        title = "Schedule"
-        
-    }
 }
 
 extension ScheduleViewController {

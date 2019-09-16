@@ -39,6 +39,9 @@ class EventListViewController: UIViewController {
             }
         }
     }
+}
+
+extension EventListViewController {
     
     private func updateLayout() {
         self.collectionView.reloadData()

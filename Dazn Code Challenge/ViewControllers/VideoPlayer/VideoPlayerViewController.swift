@@ -35,6 +35,9 @@ class VideoPlayerViewController: UIViewController {
         removePlayer()
         
     }
+}
+
+extension VideoPlayerViewController {
     
     private func updatePlayer() {
         guard let url = model else {
@@ -66,7 +69,7 @@ class VideoPlayerViewController: UIViewController {
     
     private func addPlayerObservers(_ player: AVPlayer) {
         playerCurrentTimeObserver = player.addPeriodicTimeObserver(forInterval: CMTime(seconds:1.0, preferredTimescale: CMTimeScale(NSEC_PER_SEC)), queue: DispatchQueue.main) { [weak self] time in
-            self?.currentTimeLabel.text = self?.formatSecondsToString(time.seconds)
+            self?.currentTimeLabel.text = "Current time: " + (self?.formatSecondsToString(time.seconds) ?? "")
         }
     }
     
@@ -86,11 +89,38 @@ class VideoPlayerViewController: UIViewController {
         playerLayer?.removeFromSuperlayer()
     }
     
-    @IBAction func playAction(_ sender: Any) {
+    private func seekBy(_ seconds: Double) {
+        guard let player = playerLayer?.player, let duration = player.currentItem?.duration else { return }
+        
+        let playerCurrentTime = CMTimeGetSeconds(player.currentTime())
+        let newTime = playerCurrentTime + seconds
+        if newTime < CMTimeGetSeconds(duration) {
+            let time2: CMTime = CMTimeMake(value: Int64(newTime * 1000 as Float64), timescale: 1000)
+            player.seek(to: time2)
+        }
+    }
+    
+    private func play() {
         playerLayer?.player?.play()
     }
     
-    @IBAction func pauseAction(_ sender: Any) {
+    private func pause() {
         playerLayer?.player?.pause()
+    }
+    
+    @IBAction func playAction(_ sender: Any) {
+        play()
+    }
+    
+    @IBAction func pauseAction(_ sender: Any) {
+        pause()
+    }
+    
+    @IBAction func seekToForward(_ sender: Any) {
+        seekBy(10)
+    }
+    
+    @IBAction func seekToRewind(_ sender: Any) {
+        seekBy(-10)
     }
 }
