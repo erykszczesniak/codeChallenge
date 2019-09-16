@@ -10,6 +10,8 @@ import UIKit
 
 class ScheduleViewController: UIViewController {
     
+    let getScheduleEventListURL = URL(string: "https://us-central1-dazn-sandbox.cloudfunctions.net/getSchedule")!
+    
     private var events: Events? {
         didSet {
             DispatchQueue.main.async {
@@ -30,6 +32,7 @@ class ScheduleViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        updateModel()
         startRefreshTimer()
     }
     
@@ -48,10 +51,9 @@ class ScheduleViewController: UIViewController {
             }
             
             DispatchQueue.main.async {
-                self.updateLayout()
+                self.updateModel()
             }
         })
-        
     }
     
     private func updateLayout() {
@@ -60,6 +62,18 @@ class ScheduleViewController: UIViewController {
             self.collectionView.reloadData()
         } else {
             showEmptyInfoLabel()
+        }
+    }
+    
+    private func updateModel() {
+        SimpleApi<Events>().getModel(url: getScheduleEventListURL) { [weak self] result in
+        
+            switch result {
+            case .failure(let failure):
+                print(failure) // todo: error handling
+            case .success(let success):
+                self?.events = success
+            }
         }
     }
     
