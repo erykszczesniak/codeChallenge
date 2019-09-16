@@ -10,6 +10,8 @@ import UIKit
 
 class EventListViewController: UIViewController {
     
+    private let getEventsListUrlString = URL(string: "https://us-central1-dazn-sandbox.cloudfunctions.net/getEvents")!
+    
     private var events: Events? {
         didSet {
             updateLayout()
@@ -22,13 +24,18 @@ class EventListViewController: UIViewController {
         }
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
-        
+        SimpleApi<Events>().getModel(url: getEventsListUrlString) { [weak self] result in
+            
+            switch result {
+            case .failure(let failure):
+                print(failure)
+            case .success(let success):
+                self?.events = success
+            }
+        }
     }
     
     private func updateLayout() {
@@ -38,12 +45,12 @@ class EventListViewController: UIViewController {
     private func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
-        
-//        collectionView.
-        
+        //register cells
+        collectionView.register(UINib(nibName: EventCell.nibName, bundle: nil), forCellWithReuseIdentifier: EventCell.nibName)
     }
 }
 
+//MARK: UICollectionViewDelegate
 extension EventListViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -52,6 +59,7 @@ extension EventListViewController: UICollectionViewDelegate {
     }
 }
 
+//MARK: UICollectionViewDataSource
 extension EventListViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -64,10 +72,17 @@ extension EventListViewController: UICollectionViewDataSource {
                 return UICollectionViewCell() // never ever.
         }
         
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EventCell.nibName, for: indexPath) as! EventCell
         let event = events[indexPath.row]
-        
-        
-        
+        cell.model = event
+        return cell
     }
 }
 
+//MARK: UICollectionViewDelegateFlowLayout
+extension EventListViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return EventCell.getCellSize(collectionView)
+    }
+}

@@ -18,6 +18,8 @@
 		DB6360CC232F9DC100B776C7 /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB6360CB232F9DC100B776C7 /* EventCell.xib */; };
 		DB6360CE232F9ED400B776C7 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360CD232F9ED400B776C7 /* EventCell.swift */; };
 		DB6360D1232FA00700B776C7 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360D0232FA00700B776C7 /* ImageDownloader.swift */; };
+		DB6360D3232FA68C00B776C7 /* ApiErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360D2232FA68C00B776C7 /* ApiErrors.swift */; };
+		DB6360D5232FA7A100B776C7 /* SimpleApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360D4232FA7A100B776C7 /* SimpleApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		DB6360CB232F9DC100B776C7 /* EventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
 		DB6360CD232F9ED400B776C7 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		DB6360D0232FA00700B776C7 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		DB6360D2232FA68C00B776C7 /* ApiErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiErrors.swift; sourceTree = "<group>"; };
+		DB6360D4232FA7A100B776C7 /* SimpleApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		DB636098232F9A9400B776C7 /* Dazn Code Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				DB6360D6232FA81400B776C7 /* SimpleApi */,
 				DB6360CF232F9FFC00B776C7 /* Helpers */,
 				DB6360CA232F9C3E00B776C7 /* EventListCells */,
 				DB6360C7232F9B6500B776C7 /* Models */,
@@ -159,6 +164,15 @@
 				DB6360D0232FA00700B776C7 /* ImageDownloader.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DB6360D6232FA81400B776C7 /* SimpleApi */ = {
+			isa = PBXGroup;
+			children = (
+				DB6360D2232FA68C00B776C7 /* ApiErrors.swift */,
+				DB6360D4232FA7A100B776C7 /* SimpleApi.swift */,
+			);
+			path = SimpleApi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,8 +310,10 @@
 				DB6360D1232FA00700B776C7 /* ImageDownloader.swift in Sources */,
 				DB6360CE232F9ED400B776C7 /* EventCell.swift in Sources */,
 				DB6360C9232F9B6C00B776C7 /* Events.swift in Sources */,
+				DB6360D5232FA7A100B776C7 /* SimpleApi.swift in Sources */,
 				DB63609C232F9A9400B776C7 /* EventListViewController.swift in Sources */,
 				DB63609A232F9A9400B776C7 /* AppDelegate.swift in Sources */,
+				DB6360D3232FA68C00B776C7 /* ApiErrors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

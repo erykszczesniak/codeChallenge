@@ -8,10 +8,22 @@
 
 import UIKit
 
-struct ImageDownloader {
+extension UIImageView {
     
-    static func downloadImage(imageUrl: String, completion: @escaping (UIImage?) -> (Void)) {
+    //kingFisher, alamofire, etc...
+    func downloadImage(imageUrl: String) {
+        self.image = nil
+        guard let url = URL(string: imageUrl) else { return }
         
+        DispatchQueue.main.async {
+            do {
+                let imageData = try Data(contentsOf: url)
+                guard let image = UIImage(data: imageData) else {
+                    return
+                }
+                
+                self.image = image
+            } catch {}
+        }
     }
-    
 }
