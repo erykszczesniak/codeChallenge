@@ -87,7 +87,7 @@ extension VideoPlayerViewController {
         playerLayer?.player = nil
         playerCurrentTimeObserver = nil
         playerLayer?.removeFromSuperlayer()
-    }
+    } 
     
     private func seekBy(_ seconds: Double) {
         guard let player = playerLayer?.player, let duration = player.currentItem?.duration else { return }
