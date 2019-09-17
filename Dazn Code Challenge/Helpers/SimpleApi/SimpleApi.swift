@@ -8,10 +8,9 @@
 
 import Foundation
 
+private let queue = DispatchQueue.main
 
 struct SimpleApi<T: Decodable> {
-    
-    private let queue = DispatchQueue(label: "com.dazn.test.app", qos: DispatchQoS.userInitiated, attributes: .concurrent, autoreleaseFrequency: DispatchQueue.AutoreleaseFrequency.workItem, target: nil)
     
     func getModel(url: URL, _ completion: @escaping (Result<T, ApiErrors>) -> (Void)) {
         queue.async {
