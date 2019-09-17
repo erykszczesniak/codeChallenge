@@ -9,20 +9,12 @@
 import UIKit
 
 class ScheduleViewController: UIViewController {
-    
-    let getScheduleEventListURL = URL(string: "https://us-central1-dazn-sandbox.cloudfunctions.net/getSchedule")!
-    
-    private var events: Events? {
-        didSet {
-            DispatchQueue.main.async {
-                self.updateLayout()
-            }
-        }
-    }
+        
+    private var viewModel = DecodableViewModel<Events>(eventType: ApiRequests.schedule)
     
     private var refreshTimer: Timer?
     
-    @IBOutlet weak var collectionView: UICollectionView! {
+    @IBOutlet var collectionView: UICollectionView! {
         didSet {
             setupCollectionView()
         }
@@ -30,7 +22,7 @@ class ScheduleViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        updateModel()
+        viewModel.updateModel()
         startRefreshTimer()
     }
     
@@ -50,27 +42,14 @@ extension ScheduleViewController {
                     timer.invalidate()
                     return
             }
-            
-            DispatchQueue.main.async {
-                self.updateModel()
-            }
+            self.viewModel.updateModel({ [weak self] _ in
+                self?.collectionView.reloadData()
+            })
         })
     }
     
     private func updateLayout() {
         self.collectionView.reloadData()
-    }
-    
-    private func updateModel() {
-        SimpleApi<Events>().getModel(url: getScheduleEventListURL) { [weak self] result in
-        
-            switch result {
-            case .failure(let failure):
-                print(failure) // todo: error handling
-            case .success(let success):
-                self?.events = success
-            }
-        }
     }
     
     private func setupCollectionView() {
@@ -85,11 +64,11 @@ extension ScheduleViewController {
 extension ScheduleViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return events?.count ?? 0
+        return viewModel.model?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let events = events,
+        guard let events = viewModel.model,
             events.count > indexPath.row else {
                 return UICollectionViewCell() // never ever.
         }

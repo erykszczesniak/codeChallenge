@@ -14,9 +14,8 @@ class VideoPlayerViewController: UIViewController {
     private var playerLayer: AVPlayerLayer?
     private var playerCurrentTimeObserver: Any?
     
-    @IBOutlet weak var playerContainerView: UIView!
-    
-    @IBOutlet weak var currentTimeLabel: UILabel!
+    @IBOutlet var playerContainerView: UIView!
+    @IBOutlet var currentTimeLabel: UILabel!
     
     var model: URL? {
         didSet {

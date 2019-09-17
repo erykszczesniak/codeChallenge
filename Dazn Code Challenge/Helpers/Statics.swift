@@ -1,5 +1,5 @@
 //
-//  Static.swift
+//  Statics.swift
 //  Dazn Code Challenge
 //
 //  Created by Piotr Krzesaj on 16/09/2019.
@@ -13,3 +13,4 @@ struct Statics {
     static let scheduleRefreshInterval: TimeInterval = 30
     
 }
+

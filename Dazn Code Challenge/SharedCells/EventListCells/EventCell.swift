@@ -12,9 +12,9 @@ class EventCell: UICollectionViewCell {
     
     static let nibName = "EventCell"
     
-    @IBOutlet weak var imageView: UIImageView?
-    @IBOutlet weak var titleLabel: UILabel?
-    @IBOutlet weak var hourLabel: UILabel?
+    @IBOutlet var imageView: UIImageView?
+    @IBOutlet var titleLabel: UILabel?
+    @IBOutlet var hourLabel: UILabel?
     
     var model: Event? {
         didSet {

@@ -10,7 +10,10 @@ import Foundation
 
 // MARK: - Event
 struct Event: Codable {
-    let id, title, subtitle, date: String
+    let id: String
+    let title: String
+    let subtitle: String
+    let date: String
     let imageURL: String
     let videoURL: String?
     

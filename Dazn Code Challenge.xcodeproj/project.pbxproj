@@ -21,9 +21,11 @@
 		DB6360D3232FA68C00B776C7 /* ApiErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360D2232FA68C00B776C7 /* ApiErrors.swift */; };
 		DB6360D5232FA7A100B776C7 /* SimpleApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360D4232FA7A100B776C7 /* SimpleApi.swift */; };
 		DB6360DA232FAF2600B776C7 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360D9232FAF2600B776C7 /* ScheduleViewController.swift */; };
-		DB6360E3232FB30200B776C7 /* Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360E2232FB30200B776C7 /* Static.swift */; };
+		DB6360E3232FB30200B776C7 /* Statics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360E2232FB30200B776C7 /* Statics.swift */; };
 		DB6360E8232FBA2000B776C7 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360E7232FBA2000B776C7 /* VideoPlayerViewController.swift */; };
 		DB6360EA232FBA3400B776C7 /* VideoPlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6360E9232FBA3400B776C7 /* VideoPlayer.storyboard */; };
+		DBAF9EBF2330CD630077A8CE /* APIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAF9EBE2330CD630077A8CE /* APIRequests.swift */; };
+		DBAF9EC22330D3C60077A8CE /* DecodableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAF9EC12330D3C60077A8CE /* DecodableViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,9 +66,11 @@
 		DB6360D2232FA68C00B776C7 /* ApiErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiErrors.swift; sourceTree = "<group>"; };
 		DB6360D4232FA7A100B776C7 /* SimpleApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleApi.swift; sourceTree = "<group>"; };
 		DB6360D9232FAF2600B776C7 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
-		DB6360E2232FB30200B776C7 /* Static.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Static.swift; sourceTree = "<group>"; };
+		DB6360E2232FB30200B776C7 /* Statics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statics.swift; sourceTree = "<group>"; };
 		DB6360E7232FBA2000B776C7 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		DB6360E9232FBA3400B776C7 /* VideoPlayer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VideoPlayer.storyboard; sourceTree = "<group>"; };
+		DBAF9EBE2330CD630077A8CE /* APIRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequests.swift; sourceTree = "<group>"; };
+		DBAF9EC12330D3C60077A8CE /* DecodableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 		DB636098232F9A9400B776C7 /* Dazn Code Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				DBAF9EC02330D3BC0077A8CE /* ViewModels */,
 				DB6360DD232FAF5700B776C7 /* SharedCells */,
 				DB6360CF232F9FFC00B776C7 /* Helpers */,
 				DB6360C7232F9B6500B776C7 /* Models */,
@@ -172,7 +177,7 @@
 			children = (
 				DB6360D6232FA81400B776C7 /* SimpleApi */,
 				DB6360D0232FA00700B776C7 /* ImageDownloader.swift */,
-				DB6360E2232FB30200B776C7 /* Static.swift */,
+				DB6360E2232FB30200B776C7 /* Statics.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 		DB6360D6232FA81400B776C7 /* SimpleApi */ = {
 			isa = PBXGroup;
 			children = (
+				DBAF9EBE2330CD630077A8CE /* APIRequests.swift */,
 				DB6360D2232FA68C00B776C7 /* ApiErrors.swift */,
 				DB6360D4232FA7A100B776C7 /* SimpleApi.swift */,
 			);
@@ -217,6 +223,14 @@
 				DB6360E9232FBA3400B776C7 /* VideoPlayer.storyboard */,
 			);
 			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
+		DBAF9EC02330D3BC0077A8CE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DBAF9EC12330D3C60077A8CE /* DecodableViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,11 +371,13 @@
 				DB6360C9232F9B6C00B776C7 /* Events.swift in Sources */,
 				DB6360DA232FAF2600B776C7 /* ScheduleViewController.swift in Sources */,
 				DB6360D5232FA7A100B776C7 /* SimpleApi.swift in Sources */,
+				DBAF9EBF2330CD630077A8CE /* APIRequests.swift in Sources */,
 				DB63609C232F9A9400B776C7 /* EventListViewController.swift in Sources */,
 				DB63609A232F9A9400B776C7 /* AppDelegate.swift in Sources */,
 				DB6360E8232FBA2000B776C7 /* VideoPlayerViewController.swift in Sources */,
+				DBAF9EC22330D3C60077A8CE /* DecodableViewModel.swift in Sources */,
 				DB6360D3232FA68C00B776C7 /* ApiErrors.swift in Sources */,
-				DB6360E3232FB30200B776C7 /* Static.swift in Sources */,
+				DB6360E3232FB30200B776C7 /* Statics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

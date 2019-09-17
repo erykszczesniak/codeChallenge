@@ -9,18 +9,10 @@
 import UIKit
 
 class EventListViewController: UIViewController {
+        
+    private var viewModel = DecodableViewModel<Events>(eventType: ApiRequests.events)
     
-    private let getEventsListUrlString = URL(string: "https://us-central1-dazn-sandbox.cloudfunctions.net/getEvents")!
-    
-    private var events: Events? {
-        didSet {
-            DispatchQueue.main.async {
-                self.updateLayout()
-            }
-        }
-    }
-    
-    @IBOutlet weak var collectionView: UICollectionView! {
+    @IBOutlet var collectionView: UICollectionView! {
         didSet {
             setupCollectionView()
         }
@@ -29,15 +21,7 @@ class EventListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        SimpleApi<Events>().getModel(url: getEventsListUrlString) { [weak self] result in
-            
-            switch result {
-            case .failure(let failure):
-                print(failure)
-            case .success(let success):
-                self?.events = success
-            }
-        }
+        viewModel.delegate = self
     }
 }
 
@@ -55,28 +39,26 @@ extension EventListViewController {
     }
 }
 
-//MARK: UICollectionViewDelegate
 extension EventListViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         guard let videoPlayerViewController = UIStoryboard(name: "VideoPlayer", bundle: nil).instantiateInitialViewController() as? VideoPlayerViewController else { print("FATAL"); return }
         self.show(videoPlayerViewController, sender: self)
-        videoPlayerViewController.model = URL(string: events?[indexPath.row].videoURL ?? "")
+        videoPlayerViewController.model = URL(string: viewModel.model?[indexPath.row].videoURL ?? "")
     }
 }
 
-//MARK: UICollectionViewDataSource
 extension EventListViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return events?.count ?? 0
+        return viewModel.model?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let events = events,
+        guard let events = viewModel.model,
         events.count > indexPath.row else {
-                return UICollectionViewCell() // never ever.
+                fatalError("NO MODEL FOR IT.")
         }
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EventCell.nibName, for: indexPath) as! EventCell
@@ -86,10 +68,16 @@ extension EventListViewController: UICollectionViewDataSource {
     }
 }
 
-//MARK: UICollectionViewDelegateFlowLayout
 extension EventListViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return EventCell.getCellSize(collectionView)
+    }
+}
+
+extension EventListViewController: DecodableViewModelDelegate {
+    
+    func updatedModel() {
+        self.collectionView.reloadData()
     }
 }
