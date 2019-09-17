@@ -34,9 +34,6 @@ class VideoPlayerViewController: UIViewController {
         removePlayer()
         
     }
-}
-
-extension VideoPlayerViewController {
     
     private func updatePlayer() {
         guard let url = model else {
