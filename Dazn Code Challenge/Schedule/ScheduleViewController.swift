@@ -70,7 +70,7 @@ extension ScheduleViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let events = viewModel.model,
             events.count > indexPath.row else {
-                return UICollectionViewCell() // never ever.
+                fatalError()
         }
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EventCell.nibName, for: indexPath) as! EventCell

@@ -12,8 +12,6 @@
 		DB63609F232F9A9400B776C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB63609D232F9A9400B776C7 /* Main.storyboard */; };
 		DB6360A1232F9A9500B776C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6360A0232F9A9500B776C7 /* Assets.xcassets */; };
 		DB6360A4232F9A9500B776C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6360A2232F9A9500B776C7 /* LaunchScreen.storyboard */; };
-		DB6360AF232F9A9500B776C7 /* Dazn_Code_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360AE232F9A9500B776C7 /* Dazn_Code_ChallengeTests.swift */; };
-		DB6360BA232F9A9500B776C7 /* Dazn_Code_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360B9232F9A9500B776C7 /* Dazn_Code_ChallengeUITests.swift */; };
 		DB6360C9232F9B6C00B776C7 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360C8232F9B6C00B776C7 /* Events.swift */; };
 		DB6360CC232F9DC100B776C7 /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB6360CB232F9DC100B776C7 /* EventCell.xib */; };
 		DB6360CE232F9ED400B776C7 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6360CD232F9ED400B776C7 /* EventCell.swift */; };
@@ -28,23 +26,6 @@
 		DBAF9EC22330D3C60077A8CE /* DecodableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAF9EC12330D3C60077A8CE /* DecodableViewModel.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		DB6360AB232F9A9500B776C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DB63608E232F9A9400B776C7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DB636095232F9A9400B776C7;
-			remoteInfo = "Dazn Code Challenge";
-		};
-		DB6360B6232F9A9500B776C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DB63608E232F9A9400B776C7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DB636095232F9A9400B776C7;
-			remoteInfo = "Dazn Code Challenge";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		DB636096232F9A9400B776C7 /* Dazn Code Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dazn Code Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB636099232F9A9400B776C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,12 +34,6 @@
 		DB6360A0232F9A9500B776C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB6360A3232F9A9500B776C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB6360A5232F9A9500B776C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB6360AA232F9A9500B776C7 /* Dazn Code ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dazn Code ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB6360AE232F9A9500B776C7 /* Dazn_Code_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dazn_Code_ChallengeTests.swift; sourceTree = "<group>"; };
-		DB6360B0232F9A9500B776C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB6360B5232F9A9500B776C7 /* Dazn Code ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dazn Code ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB6360B9232F9A9500B776C7 /* Dazn_Code_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dazn_Code_ChallengeUITests.swift; sourceTree = "<group>"; };
-		DB6360BB232F9A9500B776C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB6360C8232F9B6C00B776C7 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		DB6360CB232F9DC100B776C7 /* EventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
 		DB6360CD232F9ED400B776C7 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
@@ -81,20 +56,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB6360A7232F9A9500B776C7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DB6360B2232F9A9500B776C7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -102,8 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				DB636098232F9A9400B776C7 /* Dazn Code Challenge */,
-				DB6360AD232F9A9500B776C7 /* Dazn Code ChallengeTests */,
-				DB6360B8232F9A9500B776C7 /* Dazn Code ChallengeUITests */,
 				DB636097232F9A9400B776C7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,8 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				DB636096232F9A9400B776C7 /* Dazn Code Challenge.app */,
-				DB6360AA232F9A9500B776C7 /* Dazn Code ChallengeTests.xctest */,
-				DB6360B5232F9A9500B776C7 /* Dazn Code ChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,24 +92,6 @@
 				DB6360A5232F9A9500B776C7 /* Info.plist */,
 			);
 			path = "Dazn Code Challenge";
-			sourceTree = "<group>";
-		};
-		DB6360AD232F9A9500B776C7 /* Dazn Code ChallengeTests */ = {
-			isa = PBXGroup;
-			children = (
-				DB6360AE232F9A9500B776C7 /* Dazn_Code_ChallengeTests.swift */,
-				DB6360B0232F9A9500B776C7 /* Info.plist */,
-			);
-			path = "Dazn Code ChallengeTests";
-			sourceTree = "<group>";
-		};
-		DB6360B8232F9A9500B776C7 /* Dazn Code ChallengeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DB6360B9232F9A9500B776C7 /* Dazn_Code_ChallengeUITests.swift */,
-				DB6360BB232F9A9500B776C7 /* Info.plist */,
-			);
-			path = "Dazn Code ChallengeUITests";
 			sourceTree = "<group>";
 		};
 		DB6360C7232F9B6500B776C7 /* Models */ = {
@@ -253,42 +192,6 @@
 			productReference = DB636096232F9A9400B776C7 /* Dazn Code Challenge.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DB6360A9232F9A9500B776C7 /* Dazn Code ChallengeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DB6360C1232F9A9500B776C7 /* Build configuration list for PBXNativeTarget "Dazn Code ChallengeTests" */;
-			buildPhases = (
-				DB6360A6232F9A9500B776C7 /* Sources */,
-				DB6360A7232F9A9500B776C7 /* Frameworks */,
-				DB6360A8232F9A9500B776C7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DB6360AC232F9A9500B776C7 /* PBXTargetDependency */,
-			);
-			name = "Dazn Code ChallengeTests";
-			productName = "Dazn Code ChallengeTests";
-			productReference = DB6360AA232F9A9500B776C7 /* Dazn Code ChallengeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		DB6360B4232F9A9500B776C7 /* Dazn Code ChallengeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DB6360C4232F9A9500B776C7 /* Build configuration list for PBXNativeTarget "Dazn Code ChallengeUITests" */;
-			buildPhases = (
-				DB6360B1232F9A9500B776C7 /* Sources */,
-				DB6360B2232F9A9500B776C7 /* Frameworks */,
-				DB6360B3232F9A9500B776C7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DB6360B7232F9A9500B776C7 /* PBXTargetDependency */,
-			);
-			name = "Dazn Code ChallengeUITests";
-			productName = "Dazn Code ChallengeUITests";
-			productReference = DB6360B5232F9A9500B776C7 /* Dazn Code ChallengeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -301,14 +204,6 @@
 				TargetAttributes = {
 					DB636095232F9A9400B776C7 = {
 						CreatedOnToolsVersion = 10.3;
-					};
-					DB6360A9232F9A9500B776C7 = {
-						CreatedOnToolsVersion = 10.3;
-						TestTargetID = DB636095232F9A9400B776C7;
-					};
-					DB6360B4232F9A9500B776C7 = {
-						CreatedOnToolsVersion = 10.3;
-						TestTargetID = DB636095232F9A9400B776C7;
 					};
 				};
 			};
@@ -326,8 +221,6 @@
 			projectRoot = "";
 			targets = (
 				DB636095232F9A9400B776C7 /* Dazn Code Challenge */,
-				DB6360A9232F9A9500B776C7 /* Dazn Code ChallengeTests */,
-				DB6360B4232F9A9500B776C7 /* Dazn Code ChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -342,20 +235,6 @@
 				DB6360A1232F9A9500B776C7 /* Assets.xcassets in Resources */,
 				DB63609F232F9A9400B776C7 /* Main.storyboard in Resources */,
 				DB6360EA232FBA3400B776C7 /* VideoPlayer.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DB6360A8232F9A9500B776C7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DB6360B3232F9A9500B776C7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,36 +260,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB6360A6232F9A9500B776C7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DB6360AF232F9A9500B776C7 /* Dazn_Code_ChallengeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DB6360B1232F9A9500B776C7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DB6360BA232F9A9500B776C7 /* Dazn_Code_ChallengeUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		DB6360AC232F9A9500B776C7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DB636095232F9A9400B776C7 /* Dazn Code Challenge */;
-			targetProxy = DB6360AB232F9A9500B776C7 /* PBXContainerItemProxy */;
-		};
-		DB6360B7232F9A9500B776C7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DB636095232F9A9400B776C7 /* Dazn Code Challenge */;
-			targetProxy = DB6360B6232F9A9500B776C7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DB63609D232F9A9400B776C7 /* Main.storyboard */ = {
@@ -582,84 +432,6 @@
 			};
 			name = Release;
 		};
-		DB6360C2232F9A9500B776C7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Dazn Code ChallengeTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "daznnnn.Dazn-Code-ChallengeTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dazn Code Challenge.app/Dazn Code Challenge";
-			};
-			name = Debug;
-		};
-		DB6360C3232F9A9500B776C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Dazn Code ChallengeTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "daznnnn.Dazn-Code-ChallengeTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dazn Code Challenge.app/Dazn Code Challenge";
-			};
-			name = Release;
-		};
-		DB6360C5232F9A9500B776C7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Dazn Code ChallengeUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "daznnnn.Dazn-Code-ChallengeUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Dazn Code Challenge";
-			};
-			name = Debug;
-		};
-		DB6360C6232F9A9500B776C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Dazn Code ChallengeUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "daznnnn.Dazn-Code-ChallengeUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Dazn Code Challenge";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -677,24 +449,6 @@
 			buildConfigurations = (
 				DB6360BF232F9A9500B776C7 /* Debug */,
 				DB6360C0232F9A9500B776C7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DB6360C1232F9A9500B776C7 /* Build configuration list for PBXNativeTarget "Dazn Code ChallengeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DB6360C2232F9A9500B776C7 /* Debug */,
-				DB6360C3232F9A9500B776C7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DB6360C4232F9A9500B776C7 /* Build configuration list for PBXNativeTarget "Dazn Code ChallengeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DB6360C5232F9A9500B776C7 /* Debug */,
-				DB6360C6232F9A9500B776C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
