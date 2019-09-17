@@ -32,7 +32,6 @@ class VideoPlayerViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         removePlayer()
-        
     }
     
     private func updatePlayer() {

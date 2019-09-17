@@ -27,7 +27,7 @@ class DecodableViewModel<T: Decodable> {
     func updateModel(_ completion: ((T?) -> (Void))? = nil) {
         guard let url = URL(string: type.rawValue) else { completion?(nil); return }
         
-        SimpleApi<T>().getModel(url: url) { [weak self] result in
+        SimpleApi.shared.getModel(url: url, decodeTo: T.self) { [weak self] result in
             
             switch result {
             case .failure(let failure):

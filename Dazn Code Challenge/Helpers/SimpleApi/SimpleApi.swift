@@ -8,11 +8,15 @@
 
 import Foundation
 
-private let queue = DispatchQueue.main
-
-struct SimpleApi<T: Decodable> {
+class SimpleApi {
     
-    func getModel(url: URL, _ completion: @escaping (Result<T, ApiErrors>) -> (Void)) {
+    private let queue = DispatchQueue.main
+    
+    static let shared = SimpleApi()
+    
+    private init () {} // singleton
+    
+    func getModel<T: Decodable>(url: URL, decodeTo: T.Type, _ completion: @escaping (Result<T, ApiErrors>) -> (Void)) {
         queue.async {
             let urlSession = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
                 guard error == nil else {
