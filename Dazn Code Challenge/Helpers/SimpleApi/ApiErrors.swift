@@ -9,7 +9,7 @@
 import Foundation
 
 enum ApiErrors: Error {
-    case requestError
+    case requestError(Error?)
     case noDataReturned
     case decodinError(Error)
 }

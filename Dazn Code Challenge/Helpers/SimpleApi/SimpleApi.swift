@@ -17,7 +17,7 @@ struct SimpleApi<T: Decodable> {
         queue.async {
             let urlSession = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
                 guard error == nil else {
-                    completion(Result.failure(ApiErrors.requestError))
+                    completion(Result.failure(ApiErrors.requestError(error)))
                     return
                 }
                 
